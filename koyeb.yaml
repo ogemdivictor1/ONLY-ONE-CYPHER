@@ -1,15 +1,21 @@
-name: lite-xd
+name: cypher-xd
 services:
-  - name: lite-xd-service
+  - name: cypher-xd-service
     type: web
     ports:
-      - 5000
+      - 9090
     routes:
       - path: "/"
     build:
       type: docker
       dockerfile: ./Dockerfile
+    env:
+      SESSION_ID: cypher~your_unique_id
+      BOT_NAME: CYPHER-XD
+      MODE: private
+      PREFIX: ","
+      OWNER_NAME: Cypher deals
+      OWNER_NUMBER: "2348126159499"
     regions:
-      - fra
-      - sin
-      
+      - fra   # Frankfurt (you can keep both)
+      - sin   # Singapore
