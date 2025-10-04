@@ -1,7 +1,7 @@
 {
   "name": "cypher-xd",
   "version": "0.0.5",
-  "description": "A WhatsApp Bot Created By Malvin King and customized by Cypher Deals",
+  "description": "A WhatsApp Bot Created By Cypher Deals",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
