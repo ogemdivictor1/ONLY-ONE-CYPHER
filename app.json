@@ -1,58 +1,45 @@
 {
-  "name": "LITE-XD",
-  "description": "Javascript WhatsApp bot made by ᴍᴀʟᴠɪɴ ᴛᴇᴄʜ",
-  "logo": "https://files.catbox.moe/qumhu4.jpg",
-  "keywords": ["MALVIN-XD","LITE-XD"],
+  "name": "CYPHER-XD",
+  "description": "Javascript WhatsApp bot made by Cypher deals",
+  "logo": "https://postimg.cc/jnJdtzJm",
+  "keywords": ["CYPHER-XD", "Cypher deals"],
   "success_url": "/",
-
-    "stack": "container",
+  "stack": "heroku-24",
   "env": {
     "SESSION_ID": {
-      "description": "Must Start with 'lite~'",
+      "description": "Must Start with 'cypher~'",
       "required": true,
-      "value": ""
+      "value": "cypher~your_unique_id"
     },
-      "BOT_NAME": {
-        "description": "write here your bot name.",
-        "required": true,
-        "value": "ʟɪᴛᴇ-xᴅ"      
-    },  
+    "BOT_NAME": {
+      "description": "write here your bot name.",
+      "required": true,
+      "value": "CYPHER-XD"
+    },
     "MODE": {
       "description": "Set private/public/inbox/groups",
       "required": false,
-      "value": "public"
-     },
-   
+      "value": "private"
+    },
     "PREFIX": {
       "description": "Your Bot Prefix (default: .) You can put your own custom prefix",
       "required": true,
-      "value": "."
+      "value": ","
     },
-    
     "OWNER_NAME": {
       "description": "Put Owner Name Here",
       "required": true,
-      "value": "ᴍᴀʟᴠɪɴ ᴋɪɴɢ"
+      "value": "Cypher deals"
     },
     "OWNER_NUMBER": {
       "description": "Put only one Owner Number Here",
       "required": true,
       "value": "263780166288"
-    },
-    
-    "PRESENCE": {
-      "description": "Put online/typing/recording/unavailable",
-      "required": true,
-      "value": "online"
     }
-
-},
-
-     "buildpacks": [
-        {
-            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
-        }
-     ],
-  "stack": "heroku-24"
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ]
 }
-  
